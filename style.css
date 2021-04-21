@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    width: 100%;
+    height: 100vh;
+}
+.nav-bar{
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*espaço entre os elementos tambem existe o space-around*/
+    padding: 1% 2%;
+}
+h3{
+    color: rgb(207, 205, 205);
+    font-family: Open Sans Condensed;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.social{
+    width: 30px;
+    margin-left: 30px;
+}
+.nav-logo{
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+}
+.logo{
+    width: 130px;
+    margin-left: 13%;
+    margin-top: 1%;
+}
+.list-selection{
+    display: flex;
+    padding: 1% 5%;
+    margin-right: 7%;
+}
+.list-selection li{
+    margin: 20px;
+    cursor: pointer;
+    font-family: Open Sans Condensed;
+    font-size: 22px;
+}
+.presentation{
+    display: flex;
+}
+.models{
+    position: absolute;
+    right: 5%;
+    width: 900px;
+    height: 600px;
+    margin: 0px 0px 0px 50px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg);
+    z-index: -1;
+}
+.text-area{
+    width: 600px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, .9);
+    text-align: center;
+}
+.text-area h1{
+    font-size: 100px;
+    font-family: Anton;
+    margin-top: 100px;
+}
+.presentation button{
+    border: none;
+    background-color: rgba(255, 255, 255, .1);
+}
+.presentation button:focus{
+    outline-style: none;
+}
+.presentation button:hover{
+    background-color: rgba(200, 200, 200, .5);
+}
+.button-left{
+    position: absolute;
+    left: 20px;
+    height: 600px;
+    border-radius: 20px 0px 0px 20px;
+}
+.button-right{
+    position: absolute;
+    right: 17px;
+    height: 600px;
+    transform: rotate(180deg);
+    border-radius: 20px 0px 0px 20px;
+}
+.button-models{
+    opacity: .5;
+    width: 50px;
+}
