@@ -8,7 +8,7 @@ a{
 }
 .top{
     width: 100%;
-    height: 100vh;
+    height: 115vh;
 }
 .nav-bar{
     background-color: rgba(0, 0, 0, .9);
@@ -23,6 +23,9 @@ h3{
     text-transform: uppercase;
     cursor: pointer;
 }
+.nav-bar h3:hover{
+    color: rgb(288, 13, 185);
+}
 .social{
     width: 30px;
     margin-left: 30px;
@@ -30,24 +33,28 @@ h3{
 .nav-logo{
     padding: 1%;
     display: flex;
-    justify-content: space-between;
     background: none;
 }
 .logo{
-    width: 130px;
-    margin-left: 13%;
+    position: absolute;
+    width: 230px;
+    margin-left: 10%;
     margin-top: 1%;
 }
 .list-selection{
     display: flex;
     padding: 1% 5%;
     margin-right: 7%;
+    margin-left: auto;
 }
 .list-selection li{
-    margin: 20px;
+    margin: 50px 20px 0px 20px;
     cursor: pointer;
     font-family: Open Sans Condensed;
     font-size: 22px;
+}
+.list-selection li:hover{
+    color: rgb(288, 13, 185);
 }
 .presentation{
     display: flex;
@@ -64,7 +71,7 @@ h3{
 .text-area{
     width: 600px;
     height: 600px;
-    background-color: rgba(255, 255, 255, .9);
+    background-image: linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,1),  rgba(255,255,255,1),  rgba(255,255,255,.01));
     text-align: center;
 }
 .text-area h1{
@@ -72,9 +79,13 @@ h3{
     font-family: Anton;
     margin-top: 100px;
 }
+.text-area h3{
+    color: rgb(99, 97, 97); 
+}
 .presentation button{
     border: none;
     background-color: rgba(255, 255, 255, .1);
+    cursor: pointer;
 }
 .presentation button:focus{
     outline-style: none;
@@ -98,4 +109,40 @@ h3{
 .button-models{
     opacity: .5;
     width: 50px;
+}
+.loop{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.img-loop{
+    width: 135px;
+    padding-top: 10px;
+}
+.img-loop img{
+    width: 20px;
+    margin-left: 17px;
+    cursor: pointer;
+}
+
+.body-section{
+    width: 100%;
+    height: 100vh;
+}
+.production{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.production h3{
+    margin-top: 7%;
+    color: black;
+    cursor: auto;
+    font-size: 25px;
+}
+.production hr{
+    width: 90%;
+    margin-left: 60px;
 }
