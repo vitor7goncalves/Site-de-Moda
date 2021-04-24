@@ -59,19 +59,36 @@ h3{
 .presentation{
     display: flex;
 }
-.models{
+.presentation #models img{
     position: absolute;
     right: 5%;
     width: 900px;
     height: 600px;
     margin: 0px 0px 0px 50px;
+    opacity: 0;
+    transition: 1s;
     z-index: -1;
+}
+.presentation #models img.selected{
+    opacity: 1;
+    animation: move 1s;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 .text-area{
     display: flex;
     flex-direction: column;
     width: 600px;
     height: 600px;
+    margin-left: 160px;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1),  rgba(255,255,255,1),  rgba(255,255,255,.01));
     text-align: center;
     align-items: center;
 }
