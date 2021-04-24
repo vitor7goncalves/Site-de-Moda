@@ -24,7 +24,7 @@ h3{
     cursor: pointer;
 }
 .nav-bar h3:hover{
-    color: rgb(288, 13, 185);
+    color: rgb(192, 10, 177);
 }
 .social{
     width: 30px;
@@ -54,7 +54,7 @@ h3{
     font-size: 22px;
 }
 .list-selection li:hover{
-    color: rgb(288, 13, 185);
+    color: rgb(192, 10, 177);
 }
 .presentation{
     display: flex;
@@ -65,22 +65,33 @@ h3{
     width: 900px;
     height: 600px;
     margin: 0px 0px 0px 50px;
-    background-image: url(https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg);
     z-index: -1;
 }
 .text-area{
+    display: flex;
+    flex-direction: column;
     width: 600px;
     height: 600px;
-    background-image: linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,1),  rgba(255,255,255,1),  rgba(255,255,255,.01));
     text-align: center;
+    align-items: center;
 }
 .text-area h1{
-    font-size: 100px;
+    font-size: 70px;
     font-family: Anton;
-    margin-top: 100px;
+    margin-top: 170px;
 }
 .text-area h3{
     color: rgb(99, 97, 97); 
+}
+.station{
+    width: 300px;
+    height: 70px;
+    background-color: rgb(192, 10, 177);
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 70px;
+    font-family: Anton;
+    font-size: 30px;
 }
 .presentation button{
     border: none;
@@ -122,11 +133,15 @@ h3{
     padding-top: 10px;
 }
 .img-loop img{
-    width: 20px;
-    margin-left: 17px;
+    width: 100px;
+    margin: 20px 0px 0px 17px;
     cursor: pointer;
 }
-
+.bar-point{
+    height: 3px;
+    background-color: rgb(192, 10, 177);
+    margin: -10px 0px 0px -537px;
+}
 .body-section{
     width: 100%;
     height: 100vh;
@@ -145,4 +160,14 @@ h3{
 .production hr{
     width: 90%;
     margin-left: 60px;
+}
+.itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itens h4{
+    font-family: Open Sans Condensed;
+    font-size: 30px;
+    margin-top: 20px;
 }
