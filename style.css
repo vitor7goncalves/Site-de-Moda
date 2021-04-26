@@ -6,6 +6,11 @@
 a{
     text-decoration: none;
 }
+h5{
+    font-family: Open Sans Condensed;
+    font-size: 17px;
+    margin-top: 1px;
+}
 .top{
     width: 100%;
     height: 115vh;
@@ -67,7 +72,7 @@ h3{
     margin: 0px 0px 0px 50px;
     opacity: 0;
     transition: 1s;
-    z-index: -1;
+    z-index: -2;
 }
 .presentation #models img.selected{
     opacity: 1;
@@ -96,9 +101,11 @@ h3{
     font-size: 70px;
     font-family: Anton;
     margin-top: 170px;
+    transition: all 1s;
 }
 .text-area h3{
     color: rgb(99, 97, 97); 
+    transition: all 1s;
 }
 .station{
     width: 300px;
@@ -157,7 +164,15 @@ h3{
 .bar-point{
     height: 3px;
     background-color: rgb(192, 10, 177);
-    margin: -10px 0px 0px -537px;
+    margin: -10px 0px 0px -177px;
+}
+.back-bar{
+    position: absolute;
+    width: 500px;
+    height: 7px;
+    background-color:rgb(0, 0, 0);
+    margin: -5px 0px 0px -177px;
+    z-index: -1;
 }
 .body-section{
     width: 100%;
@@ -179,6 +194,8 @@ h3{
     margin-left: 60px;
 }
 .itens{
+    width: 100%;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,3 +205,34 @@ h3{
     font-size: 30px;
     margin-top: 20px;
 }
+.base-shirt{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    padding-left: 100px;
+    align-items: center;
+}
+.shirt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 440px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+.shirt-sell{
+    width: 250px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.shirt-sell:hover{
+    width: 277px;
+}
+.price{
+    font-size: 22px;
+    color: rgb(192, 10, 177);
+}
+
