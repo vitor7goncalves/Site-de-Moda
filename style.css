@@ -77,7 +77,7 @@ h3{
     margin-left: auto;
 }
 .list-selection li{
-    margin: 50px 15px 0px 15px;
+    margin: 30px 15px 0px 15px;
     cursor: pointer;
     font-family: Open Sans Condensed;
     font-size: 22px;
@@ -85,9 +85,15 @@ h3{
 .list-selection li:hover{
     color: rgb(192, 10, 177);
 }
+.list-selection hr{
+    width: 100px;
+    margin-top: 0px;
+    opacity: .1;
+}
 .painel-female{
     position: absolute;
     width: 35%;
+    height: 300px;
     z-index: 2;
     opacity: 0;
     visibility: hidden;
@@ -97,21 +103,68 @@ h3{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient( rgba(255,255,255,1), rgba(255,255,255,1),  rgba(255,255,255,.9),  rgba(255,255,255,.5));
+    background-image: linear-gradient( rgba(255,255,255,1), rgba(255,255,255,1),  rgba(255,255,255,.9),  rgba(255,255,255,.5),  rgba(255,255,255,.2));
     z-index: -1;
 }
 .painel-female ul{
     display: grid;
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 140px 140px 140px;
     align-items: center;
     padding: 0px 20px 20px 20px;
-    margin-top: -30px;
+    margin-top: 30px;
 }
 .painel-female a{
     color: black;
 }
 .painel-female ul li{
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    margin-top: 10px;
+}
+.painel-male{
+    position: absolute;
+    width: 35%;
+    height: 300px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.painel-male ul{
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+    margin-top: 30px;
+}
+.painel-male a{
+    color: black;
+}
+.painel-male ul li{
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    margin-top: 10px;
+}
+.painel-childrens{
+    position: absolute;
+    width: 35%;
+    height: 400px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.painel-childrens ul{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+    margin-top: 30px;
+}
+.painel-childrens a{
+    color: black;
+}
+.painel-childrens ul li{
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    margin-top: 10px;
 }
 .presentation{
     display: flex;
