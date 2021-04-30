@@ -2,7 +2,6 @@ let clock = 5000,
     currentImageIndex = 0,
     image = document.querySelectorAll('#models img'),
     max = image.length,
-    onDrop = document.querySelector('h4.street'),
     barTime = 0;
 
 function slider() {
@@ -36,15 +35,6 @@ function start() {
     setInterval(() => {
         slider();
     }, clock)
-}
-
-function drop(){
-    onDrop.style.opacity = "1";
-    onDrop.style.marginLeft = "-400px";
-}
-function noDrop(){
-    onDrop.style.opacity = "0";
-    onDrop.style.marginLeft = "-500px";
 }
 
 window.addEventListener('load', start);
