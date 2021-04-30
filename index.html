@@ -14,7 +14,9 @@
 <body>
     <header class="top">
         <nav class="nav-bar">
-            <h3>Conheça Nossa Loja</h3>
+            <h3 onmouseover="drop()" onmouseout="noDrop()">Conheça a nossa loja</h3>
+            <div class="arrow"></div>
+            <h4 class="street">Endereço: Rua Lorem ipsum dolor sit amet consectetur N° 000 Ribeirão Preto - SP</h4>
             <div class="social-list">
                 <a href="">
                     <img class="social" src="assets/img/icon-facebook.png" alt="">
@@ -82,9 +84,9 @@
     <section class="body-section">
         <div class="production">
             <h3> Veja alguns dos nossos produtos</h3>
-            <hr>
         </div>
         <div class="itens">
+            <hr>
             <h4>
                 Blusas
             </h4>
@@ -93,47 +95,170 @@
                     <img class="shirt-sell" src="Assets/Img/blusas/0195de7ff057260bb6c31f5893414747.png" alt="">
                     <h5>Lorem ipsum dolor. </h5>
                     <h5 class="price">R$ 0.00</h5>
-                    <h5>5x de R$00,00 sem juros</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
                 </div>
                 <div class="shirt">
                     <img class="shirt-sell" src="Assets/Img/blusas/1a59ddebf32298aad1d1954c857d1c79.jpg" alt="">
                     <h5>Lorem ipsum dolor. </h5>
                     <h5 class="price">R$ 0.00</h5>
-                    <h5>5x de R$00,00 sem juros</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
                 </div>
                 <div class="shirt">
                     <img class="shirt-sell" src="Assets/Img/blusas/5b698a3fdd37d2f08d6ecd7a58e15488.jpg" alt="">
                     <h5>Lorem ipsum dolor. </h5>
                     <h5 class="price">R$ 0.00</h5>
-                    <h5>5x de R$00,00 sem juros</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
                 </div>
                 <div class="shirt">
                     <img class="shirt-sell" src="Assets/Img/blusas/60e9b2546ac08c2eee83e50be87add93.jpg" alt="">
                     <h5>Lorem ipsum dolor. </h5>
                     <h5 class="price">R$ 0.00</h5>
-                    <h5>5x de R$00,00 sem juros</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
                 </div>
                 <div class="shirt">
                     <img class="shirt-sell" src="Assets/Img/blusas/914e62bc08b3dd7b7fa1224730eca101.jpg" alt="">
                     <h5>Lorem ipsum dolor. </h5>
                     <h5 class="price">R$ 0.00</h5>
-                    <h5>5x de R$00,00 sem juros</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
                 </div>
                 <div class="shirt">
                     <img class="shirt-sell" src="Assets/Img/blusas/a82778a4d40ced0ba008114a042a197b.png" alt="">
                     <h5>Lorem ipsum dolor. </h5>
                     <h5 class="price">R$ 0.00</h5>
-                    <h5>5x de R$00,00 sem juros</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+            </div>
+            <hr>
+            <h4>
+                Calças
+            </h4>
+            <div class="base-pants">
+                <div class="pants">
+                    <img class="pants-sell" src="Assets/Img/calças/alicia-petresc-BciCcl8tjVU-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="pants">
+                    <img class="pants-sell" src="Assets/Img/calças/ameer-basheer-KXSX-i35_bQ-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="pants">
+                    <img class="pants-sell" src="Assets/Img/calças/engin-akyurt-5raPrOhbKQo-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="pants">
+                    <img class="pants-sell" src="Assets/Img/calças/joeyy-lee-8Vv5H3oIGjA-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="pants">
+                    <img class="pants-sell" src="Assets/Img/calças/tamara-bellis-zDyJOj8ZXG0-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="pants">
+                    <img class="pants-sell" src="Assets/Img/calças/vladimir-fedotov-MPfyh3xJ1iE-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+            </div>
+            <hr>
+            <h4>
+                Calçados
+            </h4>
+            <div class="base-shoes">
+                <div class="shoes">
+                    <img class="shoes-sell" src="Assets/Img/sapatos/engin-akyurt-JWZe-4hg9aA-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="shoes">
+                    <img class="shoes-sell" src="Assets/Img/sapatos/laura-chouette-pvICOT96zY8-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="shoes">
+                    <img class="shoes-sell" src="Assets/Img/sapatos/raychan-1pCpWipo_jM-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="shoes">
+                    <img class="shoes-sell" src="Assets/Img/sapatos/pabbathi-prashanth-fSsNuMtYg00-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="shoes">
+                    <img class="shoes-sell" src="Assets/Img/sapatos/pesce-huang-RWCyUDnSg5Y-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
+                </div>
+                <div class="shoes">
+                    <img class="shoes-sell" src="Assets/Img/sapatos/joshua-rondeau-WHI9yeMHo7M-unsplash.jpg" alt="">
+                    <h5>Lorem ipsum dolor. </h5>
+                    <h5 class="price">R$ 0.00</h5>
+                    <h5 class="credits">5x de R$00,00 sem juros</h5>
                 </div>
             </div>
 
-        </div>
     </section>
     <footer>
-
+        <div class="base-footer">
+            <div class="logo-footer">
+                <img src="assets/Img/logo.png" alt="">
+            </div>
+            <div class="list-footer">
+                <ul class="list-selection-footer">
+                    <li>
+                        <h4>Sobre</h4>
+                    </li>
+                    <li>
+                        <h4>Promoções</h4>
+                    </li>
+                    <li>
+                        <h4>Feminino</h4>
+                    </li>
+                    <li>
+                        <h4>Masculino</h4>
+                    </li>
+                    <li>
+                        <h4>Infantil</h4>
+                    </li>
+                    <li>
+                        <h4>Acessórios</h4>
+                    </li>
+                    <li>
+                        <h4>Outlet</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="come-on">
+                <h3>Conheça a nossa loja</h3>
+                <h4>Endereço: Rua Lorem ipsum dolor sit amet consectetur N° 000 Ribeirão Preto - SP</h4>
+            </div>
+            <div class="social-footer">
+                <a href=""><img src="assets/Img/icon-facebook.png" alt=""></a>
+                <a href=""><img src="Assets/Img/icon-insta.png" alt=""></a>
+                <a href=""><img src="Assets/Img/icon-whatsapp.png" alt=""></a>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
     <script src="slide.js"></script>
+
 </body>
 
 </html>

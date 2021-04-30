@@ -11,6 +11,10 @@ h5{
     font-size: 17px;
     margin-top: 1px;
 }
+hr{
+    width: 90%;
+    margin: 20px 0px 10px 0px;
+}
 .top{
     width: 100%;
     height: 115vh;
@@ -30,6 +34,26 @@ h3{
 }
 .nav-bar h3:hover{
     color: rgb(192, 10, 177);
+}
+.arrow {
+    position: absolute;
+    padding: 5px;
+    box-shadow: 2px -2px 0 1px rgb(207, 205, 205);
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin-left: 160px;
+    transform: rotate(45deg);
+    transition: all .3s;
+}
+.nav-bar h3:hover + .arrow{
+    box-shadow: 2px -2px 0 1px rgb(192, 10, 177);
+    transform: rotateZ(227deg);
+}
+.street{
+    opacity: 0;
+    color: rgb(207, 205, 205);
+    margin-left: -500px;
+    transition: all .5s;
 }
 .social{
     width: 30px;
@@ -53,7 +77,7 @@ h3{
     margin-left: auto;
 }
 .list-selection li{
-    margin: 50px 20px 0px 20px;
+    margin: 50px 15px 0px 15px;
     cursor: pointer;
     font-family: Open Sans Condensed;
     font-size: 22px;
@@ -164,19 +188,21 @@ h3{
 .bar-point{
     height: 3px;
     background-color: rgb(192, 10, 177);
-    margin: -10px 0px 0px -177px;
+    margin: -10px 0px 0px -197px;
 }
 .back-bar{
     position: absolute;
-    width: 500px;
+    width: 540px;
     height: 7px;
     background-color:rgb(0, 0, 0);
-    margin: -5px 0px 0px -177px;
+    margin: -5px 0px 0px -197px;
     z-index: -1;
 }
 .body-section{
     width: 100%;
-    height: 100vh;
+    height: 217rem;
+    display: flex;
+    flex-direction: column;
 }
 .production{
     display: flex;
@@ -189,10 +215,7 @@ h3{
     cursor: auto;
     font-size: 25px;
 }
-.production hr{
-    width: 90%;
-    margin-left: 60px;
-}
+
 .itens{
     width: 100%;
     height: 1000px;
@@ -203,12 +226,12 @@ h3{
 .itens h4{
     font-family: Open Sans Condensed;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .base-shirt{
     display: grid;
     grid-template-columns: 350px 350px 350px;
-    padding-left: 100px;
+    padding-left: 30px;
     align-items: center;
 }
 .shirt{
@@ -235,4 +258,118 @@ h3{
     font-size: 22px;
     color: rgb(192, 10, 177);
 }
+.credits{
+    width: 170px;
+    height: 27px;
+    text-align: center;
+    background-color: rgb(192, 10, 177);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
+    color: #ffffff;
+}
+.base-pants{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    padding-left: 30px;
+    align-items: center;
+}
+.pants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 440px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+.pants-sell{
+    width: 220px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.pants-sell:hover{
+    width: 247px;
+}
+.base-shoes{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    padding-left: 30px;
+    align-items: center;
+}
+.shoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 440px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+.shoes-sell{
+    width: 220px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.shoes-sell:hover{
+    width: 247px;
+}
+.base-footer{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 140px;
+    margin-top: 70px;
+}
+
+.list-footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+.list-selection-footer{
+  display: flex;
+}
+.list-selection-footer li{
+    margin: 50px 15px 0px 15px;
+    cursor: pointer;
+    font-family: Open Sans Condensed;
+    font-size: 22px;
+}
+.list-selection-footer li:hover{
+    color: rgb(192, 10, 177);
+}
+
+.come-on{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+}
+.come-on h3, h4{
+    margin: 10px;
+    font-family:  Open Sans Condensed;
+}
+.social-footer{
+    display: flex;
+    align-items: center;
+}
+.social-footer img{
+    width: 37px;
+    margin: 30px;
+}
+
 
