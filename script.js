@@ -1,29 +1,18 @@
-let text = document.querySelector('h1.text-h1')
-let text2 = document.querySelector('h3.text-h3')
-let textArea = document.querySelector('div.text-area')
-let point = document.querySelector('img.point')
-let barPoint = document.querySelector('div.bar-point');
-let time = 2;
+let text = document.querySelector('h1.text-h1'),
+    text2 = document.querySelector('h3.text-h3'),
+    textArea = document.querySelector('div.text-area'),
+    point = document.querySelector('img.point'),
+    barPoint = document.querySelector('div.bar-point'),
+    onDrop = document.querySelector('h4.street'),
+    femaleDrop = document.querySelector('div.painel-female'),
+    maleDrop = document.querySelector('div.painel-male'),
+    childrensDrop = document.querySelector('div.painel-childrens'),
+    imageFemale = document.getElementById('img-models-female'),
+    imageMale = document.getElementById('img-models-male'),
+    imageChildren = document.getElementById('img-models-children'),
+    time = 1,
+    clock = 5000,
+    barTime = 0,
+    currentImageIndex = 0;
 
-function painel() {
-    time ++;
-    if (time === 2) {
-        text.innerHTML = 'Moda Feminina';
-        text2.innerHTML = 'Encontre aqui o seu estilo!';
-        point.src = 'assets/Img/Ponto 1.png';
-    } else if (time === 3) {
-        text.innerHTML = 'Moda Masculina';
-        text2.innerHTML = 'Para o homem moderno!';
-        point.src = 'assets/Img/Ponto 2.png';
-    }else if(time === 4){
-        text.innerHTML = 'Moda Infantil';
-        text2.innerHTML = 'O seu filho na moda!';
-        point.src = 'assets/Img/Ponto 3.png';
-    }
-    if(time === 4){
-        time = 1;
-    }
-}
-
-let rotationImage = setInterval(painel, 5000);
 
